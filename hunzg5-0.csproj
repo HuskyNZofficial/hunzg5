@@ -4,7 +4,13 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>hunzg5_0</RootNamespace>
+    <RootNamespace>HuskyNZ</RootNamespace>
+    <OutputType>WinExe</OutputType>
+    <Company>HuskyNZ</Company>
+    <Authors>Peter</Authors>
+    <Product>HuskyNZ main site,</Product>
+    <ApplicationInsightsResourceId>/subscriptions/46e447e4-9360-4645-8eb2-f3749aae741f/resourceGroups/rg-aue-webapps/providers/microsoft.insights/components/hunz0</ApplicationInsightsResourceId>
+    <UserSecretsId>1f03cbfc-625e-434f-8100-b5b78eff264f</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="6.0.5" />
     <PackageReference Include="Microsoft.Identity.Web" Version="1.25.2" />
