@@ -57,13 +57,25 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
+        <script>
+  window.intercomSettings = {
+    api_base: "https://api-iam.intercom.io",
+    app_id: "urre4tt8"
+  };
+</script>
+
+        <script>
+// We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/urre4tt8'
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/urre4tt8';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script> 
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - HuskyNZ - <a asp-area="" asp-controller="Pages" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+<footer class="border-top footer text-muted">
+
+    <div class="container">
+        &copy; 2022 - HuskyNZ - <a asp-area="" asp-controller="Pages" asp-action="Privacy">Privacy</a>
+    </div>
+</footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
